@@ -1,4 +1,4 @@
-configurando o docker Postgres: docker run --name database -e POSTGRES_PASSWORD=docker -p 5433:5433
+configurando o docker Postgres: docker run --name database -e POSTGRES_PASSWORD=docker -p 5433:5433 -d postgres
 
 migration database: yarn sequelize db:migrate  //desfazer as migrations yarn sequelize db:migrate:undo ou undo:all+
 
